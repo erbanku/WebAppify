@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WebAppify
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Make any website an installable PWA.
 // @author       NoCLin
 // @match        *://*/*
@@ -118,6 +118,7 @@
         description: description,
         start_url: window.location.href,
         display: 'standalone',
+        display_override: ['tabbed'],
         theme_color: '#ffffff',
         background_color: '#ffffff',
         icons: [
